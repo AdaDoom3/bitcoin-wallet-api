@@ -11,9 +11,9 @@ wallet.statics.toKeyPair = function (wif){
   return bitcoin.ECPair.fromWIF (wif);
 };
 
-wallet.methods.generateNewKeyPair = function(name, cb) {
+wallet.methods.generateNewKeyPair = function(name) {
   this.keys.push(bitcoin.ECPair.makeRandom().toWIF());
-  this.save();
+  return this.save();
 };
 
 wallet.methods.allKeysAsECPairs = function(name, cb) {
