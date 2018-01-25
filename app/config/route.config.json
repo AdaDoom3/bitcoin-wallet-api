@@ -1,0 +1,79 @@
+{
+  "routes": [
+    {
+      "route": "/v1/coins",
+      "method": "GET",
+      "controller": "../controllers/v1/coins/coins-controller"
+    },
+    {
+      "route": "/v1/users",
+      "method": "GET",
+      "controller": "../controllers/v1/users/users-controller"
+    },
+    {
+      "route": "/v1/user/:id",
+      "method": "POST",
+      "controller": "../controllers/v1/user/user-controller"
+    },
+    {
+      "route": "/v1/user/:id",
+      "method": "GET",
+      "controller": "../controllers/v1/user/user-controller"
+    },
+    {
+      "route": "/v1/user/:id",
+      "method": "PUT",
+      "controller": "../controllers/v1/user/user-controller"
+    },
+    {
+      "route": "/v1/user/:id",
+      "method": "DELETE",
+      "controller": "../controllers/v1/user/user-controller"
+    },
+    {
+      "route": "/v1/wallets/:userId",
+      "method": "GET",
+      "controller": "../controllers/v1/wallets/wallets-controller"
+    },
+    {
+      "route": "/v1/wallet/:id",
+      "method": "POST",
+      "controller": "../controllers/v1/wallet/wallet-controller"
+    },
+    {
+      "route": "/v1/wallet/:id",
+      "method": "GET",
+      "controller": "../controllers/v1/wallet/wallet-controller"
+    },
+    {
+      "route": "/v1/wallet/:id",
+      "method": "PUT",
+      "controller": "../controllers/v1/wallet/wallet-controller"
+    },
+    {
+      "route": "/v1/wallet/:id",
+      "method": "DELETE",
+      "controller": "../controllers/v1/wallet/wallet-controller"
+    },
+    {
+      "route": "/v1/addresses/:walletId",
+      "method": "GET",
+      "controller": "../controllers/v1/addresses/addresses-controller"
+    },
+    {
+      "route": "/v1/address/:walletId",
+      "method": "POST",
+      "controller": "../controllers/v1/address/address-controller"
+    },
+    {
+      "route": "/v1/transactions/:walletId",
+      "method": "GET",
+      "controller": "../controllers/v1/transactions/transactions-controller"
+    },
+    {
+      "route": "/v1/transaction/:walletId",
+      "method": "POST",
+      "controller": "../controllers/v1/transaction/transaction-controller"
+    }
+  ]
+}

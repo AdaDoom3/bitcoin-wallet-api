@@ -1,0 +1,35 @@
+{
+  "name": "bitcoin-wallet-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "test-coverage": "npm test && istanbul cover node_modules/mocha/bin/_mocha -- -R spec",
+    "install-local": "npm install -g mocha & npm install -g node-inspector & npm install",
+    "start": "node server.js 0 dev 127.0.0.1 3000 9000 mongodb://127.0.0.1:27017/bitcoin-wallet",
+    "debug": "node --inspect server.js 0 dev 127.0.0.1 3000 9000 mongodb://127.0.0.1:27017/bitcoin-wallet"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.0.0",
+    "sinon": "^4.2.1"
+  },
+  "dependencies": {
+    "bitcoinjs-lib": "^3.3.2",
+    "body-parser": "^1.18.2",
+    "cluster-service": "^2.0.0",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.1"
+  }
+}
